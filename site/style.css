@@ -1,0 +1,146 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Georgia;
+	background-color: #202020;
+	color: #DFDFDF;
+}
+
+a {
+	color: #b5c9ff;
+	text-decoration: none;
+}
+
+
+
+#title {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	max-width: 100%;
+}
+
+
+.container {
+	float: left;
+	padding-bottom: 50px;
+}
+
+.left {
+	float:left;
+	max-width: 450px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.right {
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	max-width: 420px;
+	margin-top: 15px;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+	line-height: 1.1em;
+	font-size: 13pt;
+	
+	margin-bottom: 8pt;
+}
+
+img.pop {
+	box-sizing: border-box;
+	border: 4px solid #DFDFDF;
+}
+
+img.fill {
+	width: 100%;
+}
+
+
+
+ul#playlist {
+	font-family: 'Open Sans';
+	font-size: 10pt;
+	color: #888;
+	background-color: #444;
+	padding-left: 25px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin-top: 2px;
+	margin-bottom: 15px;
+	line-height: 1.2em;
+}
+
+ul#playlist a {
+	color: #888;
+	text-decoration: none;
+}
+
+ul#playlist li.playing a {
+	color: #FFF;
+}
+
+ul#playlist li.playing:before {
+	content: '♬';
+	line-height: 14px;
+	position: absolute;
+	left: -15px;
+	top: 8px;
+	color: #FFF;
+	font-size: 13px;
+}
+
+ul#playlist ol li.playing:before {
+	left: -40px;
+	top: 4px;
+}
+
+ul#playlist li {
+	list-style-type: none;
+	position: relative;
+}
+
+ul#playlist > li {
+	padding-top: 8px;
+}
+
+ul#playlist div {
+	padding-top: 8px;
+}
+
+ul#playlist ol {
+	margin-left: 4em;
+}
+
+ul#playlist ol li {
+	list-style-type: upper-roman;
+}
+
+
+
+
+
+
+@media screen and (min-width: 460px) {
+	.left {
+		margin-left: 30px;
+	}
+
+	.right {
+		margin-left: 30px;
+	}
+
+	ul#playlist {
+		font-size: 12pt;
+		line-height: 1.35em;
+	}
+
+	p {
+		font-size: 16pt;
+	}
+}
