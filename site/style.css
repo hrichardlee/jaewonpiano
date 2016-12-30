@@ -7,6 +7,7 @@ body {
 	font-family: Georgia;
 	background-color: #202020;
 	color: #DFDFDF;
+	max-width: 1000px;
 }
 
 a {
@@ -19,7 +20,6 @@ a {
 #title {
 	margin-top: 5px;
 	margin-bottom: 15px;
-	max-width: 100%;
 }
 
 
@@ -86,18 +86,18 @@ ul#playlist li.playing a {
 }
 
 ul#playlist li.playing:before {
-	content: '♬';
+	content: '>';
 	line-height: 14px;
 	position: absolute;
 	left: -15px;
-	top: 8px;
+	top: 11px;
 	color: #FFF;
 	font-size: 13px;
 }
 
 ul#playlist ol li.playing:before {
 	left: -40px;
-	top: 4px;
+	top: 2px;
 }
 
 ul#playlist li {
