@@ -1,0 +1,5 @@
+server {
+    root /var/sites/jaewonpiano;
+    server_name jaewonpiano.com www.jaewonpiano.com;
+    expires 5d;
+}
