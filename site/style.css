@@ -93,6 +93,12 @@ p {
 	margin-bottom: 8pt;
 }
 
+img.icon {
+	height: 1em;
+	position: relative;
+	top: 5px;
+	padding-right: 3px;
+}
 
 .playlist-container {
 	float: right;

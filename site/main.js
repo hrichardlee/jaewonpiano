@@ -3,8 +3,9 @@ $(function() {
   var part1 = 'contact';
   var part2 = 'jaewon';
   var part3 = 'piano';
+  var contactspan = $('#contact a span');
+  contactspan.text(part1 + part2 + part3 + '@' + 'gmail.com');
   var contactlink = $('#contact a');
-  contactlink.text('Contact: ' + part1 + part2 + part3 + '@' + 'gmail.com');
   contactlink.attr('href', 'mailto:' + part1 + part2 + part3 + '@' + 'gmail.com');
 
   // Setup the player to autoplay the next track
