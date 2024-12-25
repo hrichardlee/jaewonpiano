@@ -27,20 +27,6 @@ div#title-img {
 	width: 100%;
 }
 
-@media (aspect-ratio > 1/1) {
-    /* Viewport is wider than tall (landscape) */
-    div#title-img {
-        content: url("img/header-cropped-horiz.jpg");
-    }
-}
-
-@media (aspect-ratio <= 1/1) {
-    /* Viewport is taller than wide (portrait) */
-    div#title-img {
-        content: url("img/header-cropped-vertical.jpg");
-    }
-}
-
 div#title-name {
 	position: absolute;
 	top: 0;
@@ -50,8 +36,23 @@ div#title-name {
 	font-size: 80px;
 	background-color: rgba(0, 0, 0, 0.3);
 	color: #DFDFDF;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px
+}
+
+@media (aspect-ratio > 1/1) {
+    div#title-img {
+        content: url("img/header-cropped-horiz.jpg");
+    }
+}
+
+@media (aspect-ratio <= 1/1) {
+    div#title-img {
+        content: url("img/header-cropped-vertical.jpg");
+    }
+
+	div#title-name {
+		padding: 5px;
+	}
 }
 
 .white-border {
